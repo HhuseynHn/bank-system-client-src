@@ -1,0 +1,87 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=01524+46536+, initial-scale=1.0" />
+    <title>Register page</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./styles/style.css" />
+    <script type="module" src="./js/index.js" defer></script>
+      </head>
+  <body>
+    <main>
+      <div class="form-container">
+        <h2 class="form-title">Register</h2>
+        <form action="" class="form-main">
+          <div class="input-container">
+            <label class="form-label" for="name">Name</label>
+            <input
+              class="form-input"
+              placeholder="Name"
+              type="text"
+              name="name"
+              id="name" />
+            <p class="error-message error-name"></p>
+          </div>
+
+          <div class="input-container">
+            <label class="form-label" for="surname">Surname</label>
+            <input
+              class="form-input"
+              type="text"
+              placeholder="Surname"
+              name="surname"
+              id="surname" />
+            <p class="error-message error-surname"></p>
+          </div>
+
+          <div class="input-container password-container">
+            <label class="form-label" for="password">Password</label>
+            <input
+              class="form-input"
+              type="password"
+              placeholder="password"
+              name="password"
+              id="password" />
+            <p class="error-message error-password"></p>
+            <i class="fa-solid fa-eye form-hidden-eye-paswrd"></i>
+            <i
+              class="fa-solid fa-eye-slash form-hidden-eye-slash-paswrd icon-hidden"></i>
+          </div>
+
+          <div class="input-container repeat-password-container">
+            <label class="form-label" for="repeat-password"
+              >Repeat password</label
+            >
+            <input
+              class="form-input"
+              type="password"
+              placeholder="repeat password"
+              name="repeatPassword"
+              id="repeat-password" />
+            <p class="error-message error-repeat-password"></p>
+            <div class="login-page-link-container">
+              <a href="./pages/login.html">If you have an account, go to Login page</a>
+            </div>
+
+            <i class="fa-solid fa-eye form-hidden-eye-repreat-paswrd"></i>
+            <i
+              class="fa-solid fa-eye-slash form-hidden-eye-slash-repreat-paswrd icon-hidden"></i>
+          </div>
+
+          <div class="button-container">
+            <button type="submit" class="form-register">Register</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

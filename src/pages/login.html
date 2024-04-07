@@ -1,0 +1,65 @@
+<!-- @format -->
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login page</title>
+    <link rel="stylesheet" href="../styles/loginPage.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+      integrity="sha512-Avb2QiuDEEvB4bZJYdft2mNjVShBftLdPG8FJ0V7irTLQ8Uo0qcPxh4Plq7G5tGm0rU+1SPhVotteLpBERwTkw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer" />
+    <script src="../js/login.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <div class="form-container">
+        <h2 class="form-title">Login</h2>
+
+        <form action="#" class="form-main">
+          <div class="input-container">
+            <label class="form-label" for="name">Name</label>
+            <input
+              class="form-input"
+              type="text"
+              placeholder="write name"
+              name="name"
+              id="name" />
+          </div>
+          <div class="input-container password-container">
+            <label class="form-label" for="password">Password</label>
+            <input
+              class="form-input"
+              type="password"
+              name="password"
+              placeholder="write password"
+              id="password" />
+            <p class="error-message error-name"></p>
+            <div class="icon-hidden-eye icon-hidden">
+              <i class="fa-solid fa-eye form-hidden-eye-paswrd"></i>
+
+            </div>
+            <div class="icon-hidden-slash-eye">
+              <i class="fa-solid fa-eye-slash form-hidden-eye-slash-paswrd"></i>
+            </div>
+
+            <div class="register-link-container">
+              <a href="../index.html" class="register-link"
+                >Do you create an account?</a
+              >
+            </div>
+          </div>
+
+          <div class="button-container">
+            <button type="submit" class="form-register">Login</button>
+          </div>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>

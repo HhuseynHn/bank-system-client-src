@@ -1,0 +1,67 @@
+/** @format */
+
+header {
+  background-color: rgba(0, 0, 0, 0.99);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+    border-bottom: solid 1px blue;
+}
+.header-container {
+  margin: 0px auto;
+  width: 70%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 13px 0px;
+  position: relative;
+  
+}
+.header-container a{
+  color: blue;
+}
+.logo {
+  display: flex;
+  column-gap: 20px;
+  color: blue;
+  font-size: 25px;
+  box-shadow: rgba(17, 17, 152, 0.584) 0px 50px 100px -20px,
+    rgba(34, 10, 165, 0.388) 0px 30px 60px -30px,
+    rgba(1, 2, 3, 0.35) 0px -2px 6px 0px inset;
+}
+
+.account {
+  display: flex;
+  column-gap: 20px;
+  color: blue;
+  font-size: 25px;
+}
+.hambr-icon {
+  cursor: pointer;
+}
+.exit-arrow {
+  cursor: pointer;
+}
+@media screen and (min-width: 769px) {
+  .hambr-icon {
+    display: none;
+  }
+  .close-icon {
+    display: none;
+  }
+  .nav-bar-list a::after {
+    content: "|";
+    color: blue;
+    padding-left: 17px;
+  }
+  .nav-bar-list {
+    display: flex;
+    column-gap: 20px;
+    font-size: 20px;
+  }
+  .nav-bar-list li:last-child a::after {
+    content: "";
+  }
+}

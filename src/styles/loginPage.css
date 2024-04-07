@@ -1,0 +1,84 @@
+/** @format */
+
+@import url("./reset.css");
+@import url("../font/dansing-script.css");
+@import url("../components/button.css");
+@import url("../components/input.css");
+@import url("../components/errorMessage.css");
+@import url("../components/title.css");
+
+body {
+  font-family: "Dancing Script", cursive;
+  background-image: url("../images/register-background-img.avif");
+  background-size: cover;
+}
+
+.form-container {
+  margin: 200px auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 35%;
+  border: solid 2px blue;
+  border-radius: 20px;
+  padding: 50px 0px;
+  background-color: rgb(15, 15, 93, 0.4);
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.input-container {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+.form-label {
+  margin-bottom: 4px;
+  color: white;
+  font-size: 19px;
+  font-weight: 500px;
+}
+
+.password-container {
+  position: relative;
+}
+
+.form-hidden-eye-paswrd {
+  position: absolute;
+  top: 33px;
+  right: 10px;
+  font-size: 11px;
+  color: rgb(12, 12, 92);
+}
+
+.form-hidden-eye-slash-paswrd {
+  position: absolute;
+  top: 33px;
+  right: 10px;
+  font-size: 11px;
+  color: rgb(12, 12, 92);
+}
+.icon-hidden {
+  display: none;
+}
+
+.show-icon {
+  display: block;
+}
+.register-link-container{
+  margin-top: 10px;
+}
+.register-link-container a{
+    color: white;
+    text-decoration: none;
+
+}
+
+.right{
+float: right;
+
+
+}
+

@@ -1,0 +1,190 @@
+/** @format */
+
+@import url("reset.css");
+@import url("../font/dansing-script.css");
+@import url("../components/hamburger.css");
+@import url("../components/header.css");
+
+body {
+  font-family: "Dancing Script", cursive;
+}
+
+.hidden {
+  display: none !important;
+}
+.show {
+  display: block !important;
+}
+
+.background-imge img {
+  margin: 0px auto;
+  width: 90%;
+  height: 100vh;
+  background-position: right;
+  opacity: 0;
+}
+
+@media screen and (min-width: 769px) {
+  .background-imge img {
+    margin: 0px auto;
+    width: 100%;
+
+    opacity: 1;
+  }
+}
+main {
+  position: relative;
+}
+.main-page {
+  position: relative;
+}
+.main-container {
+  margin: 0px auto;
+  width: 75%;
+  top: 0px;
+  color: white;
+  left: 100px;
+  font-size: 20px;
+  color: blue;
+}
+aside {
+  width: 15%;
+  height: 100vh;
+  background-color: rgb(6, 6, 68);
+  color: white;
+  left: 0px;
+  top: 0px;
+  font-size: 20px;
+  position: absolute;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+  border-right: solid 1px blue;
+}
+.main-page ul {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 100px;
+  margin-left: 50px;
+  padding-left: 5px;
+}
+.main-page li {
+  display: flex;
+  column-gap: 15px;
+  border-bottom: solid 1px blue;
+
+  padding: 3px 0px;
+}
+.main-page li p {
+  cursor: pointer;
+}
+.my-balance {
+  display: flex;
+  column-gap: 14px;
+  position: absolute;
+  color: white;
+  right: 30px;
+  top: 20px;
+  border: solid 1px blue;
+  border-radius: 19px;
+  padding: 8px 18px;
+  font-size: 16px;
+}
+
+.content {
+  position: absolute;
+  top: 40px;
+  left: 340px;
+}
+.tite {
+  font-size: 36px;
+  margin-bottom: 25px;
+}
+.operation-content {
+  display: flex;
+  align-items: center;
+  column-gap: 12px;
+}
+.sub-title {
+  color: white;
+}
+#input-number {
+  border: solid 1px blue;
+  border-radius: 8px;
+  padding: 3px 6px;
+}
+.button-increase {
+  border: solid 1px blue;
+  border-radius: 8px;
+  padding: 3px 20px;
+  color: blue;
+  font-weight: 900;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: "Dancing Script", cursive;
+}
+
+.content-cashout {
+  position: absolute;
+  top: 80px;
+  left: 340px;
+}
+.content-deposit {
+  position: absolute;
+  top: 116px;
+  left: 340px;
+}
+
+.sub-title-percent {
+  color: white;
+  margin-left: 20px;
+}
+
+#input-percent {
+  border: solid 1px blue;
+  border-radius: 8px;
+  width: 50px;
+  color: blue;
+  padding: 3px 6px;
+}
+#input-year {
+  border: solid 1px blue;
+  border-radius: 8px;
+  width: 50px;
+  color: blue;
+  padding: 3px 6px;
+}
+.sub-title-year {
+  color: white;
+  margin-left: 20px;
+}
+.button-total {
+  margin-left: 20px;
+}
+.commsion {
+  border: solid 1px blue;
+  background-color: white;
+  border-radius: 6px;
+  color: blue;
+  padding: 3px 8px 3px;
+  font-size: 13px;
+  height: 15px;
+}
+
+.content-credit-line {
+  position: absolute;
+  top: 160px;
+  left: 340px;
+}
+.credit{
+  border: solid 1px blue;
+  background-color: white;
+  border-radius: 6px;
+  color: blue;
+  padding: 3px 8px 3px;
+  font-size: 13px;
+  height: 15px;
+}
