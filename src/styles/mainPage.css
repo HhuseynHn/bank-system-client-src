@@ -48,7 +48,7 @@ main {
   color: blue;
 }
 aside {
-  width: 15%;
+  width: 226px;
   height: 100vh;
   background-color: rgb(6, 6, 68);
   color: white;
@@ -103,15 +103,13 @@ aside {
   font-size: 36px;
   margin-bottom: 25px;
 }
-.operation-content {
-  display: flex;
-  align-items: center;
-  column-gap: 12px;
-}
-.sub-title {
-  color: white;
-}
-#input-number {
+@media screen and (min-width: 769px) {
+  .operation-content {
+    display: flex;
+    align-items: center;
+    column-gap: 12px;
+  }
+  #input-number {
   border: solid 1px blue;
   border-radius: 8px;
   padding: 3px 6px;
@@ -126,6 +124,13 @@ aside {
   cursor: pointer;
   font-family: "Dancing Script", cursive;
 }
+}
+
+.sub-title {
+  color: white;
+}
+
+
 
 .content-cashout {
   position: absolute;
@@ -179,7 +184,7 @@ aside {
   top: 160px;
   left: 340px;
 }
-.credit{
+.credit {
   border: solid 1px blue;
   background-color: white;
   border-radius: 6px;
@@ -187,4 +192,29 @@ aside {
   padding: 3px 8px 3px;
   font-size: 13px;
   height: 15px;
+}
+
+@media screen and (max-width:768px) {
+  .operation-content {
+    display: flex;
+    flex-direction: column;
+    
+  }
+  
+  #input-number {
+  border: solid 1px blue;
+  border-radius: 8px;
+  padding: 3px 6px;
+  margin: 10px 0px;
+}
+.button-increase {
+  border: solid 1px blue;
+  border-radius: 8px;
+  padding: 3px 10px;
+  color: blue;
+  font-weight: 900;
+  font-size: 13px;
+  cursor: pointer;
+  font-family: "Dancing Script", cursive;
+}
 }
